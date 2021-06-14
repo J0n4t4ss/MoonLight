@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Moon Light</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width,inicial-scale=1.0,maximum-scale=1.0">
+</head>
+
+<body>
+    <section>
+        <img src="img/bg.jpg" id="bg">
+        <img src="img/moon.png" id="moon">
+        <img src="img/mountain.png" id="mountain">
+        <img src="img/road.png" id="road">
+    </section>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent bibendum at velit nec vestibulum. Aliquam mollis felis ac vestibulum dapibus. Praesent dolor lacus, interdum nec neque in, maximus maximus nibh. Suspendisse et fringilla nisl. Nam commodo pulvinar euismod. Vestibulum ut condimentum neque. Donec eu diam ut elit auctor porttitor mollis vitae lorem. Ut non fringilla sapien, eu lobortis orci.
+
+Aenean nunc sem, condimentum quis ipsum vitae, vehicula tempor odio. Aenean interdum congue placerat. Etiam dictum magna at neque iaculis suscipit. Aenean venenatis lacus vel urna tincidunt cursus. Praesent nec diam ac felis euismod laoreet in sit amet purus. Donec et hendrerit sapien, eget egestas nulla. Curabitur vel urna ut eros iaculis euismod. Etiam eu volutpat est, a volutpat metus.
+
+Duis posuere commodo ipsum eget feugiat. Suspendisse aliquam nibh et imperdiet sodales. Suspendisse laoreet tellus sed magna sodales varius. Fusce interdum arcu varius quam bibendum, vitae rutrum urna rutrum. Nullam malesuada metus leo, non lobortis eros ultricies gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla at justo eget nibh rhoncus elementum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum accumsan mi eu ante fermentum, vulputate consectetur felis sagittis. Morbi dictum quis lectus quis ultrices. Integer vestibulum ornare egestas. Mauris vestibulum mauris vitae felis pharetra, a vehicula purus imperdiet. Pellentesque quis vulputate erat, sed sollicitudin urna.
+
+Cras suscipit nisi id risus ornare, eget mattis lacus molestie. Nulla vel odio ut neque imperdiet aliquet. Quisque nunc elit, semper sit amet sagittis ac, aliquet vitae nibh. Nullam congue nisl lectus, ac fermentum nisi semper eget. Donec ultricies nulla sit amet odio luctus, eu ullamcorper nisl sodales. Nullam magna nibh, placerat vel lectus et, ullamcorper aliquam urna. Aliquam molestie neque eros, et molestie quam laoreet eu. Duis in odio ultrices, tincidunt sem elementum, commodo lectus. Ut varius cursus ligula, feugiat blandit turpis placerat et. Donec pharetra sodales felis et dapibus. Vivamus sollicitudin, turpis et consequat semper, lacus ex congue turpis, sit amet efficitur elit tellus ut sem. Fusce lobortis at turpis at hendrerit. Donec rhoncus diam ac eros aliquet, a ultrices ligula gravida. Integer tincidunt lobortis orci in vulputate.
+        </p>
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+
+        window.addEventListener('scroll',  function(){
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            
+        })
+    </script>
+
+</body>
+
+</html>
